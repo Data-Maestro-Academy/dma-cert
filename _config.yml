@@ -1,0 +1,28 @@
+# Site settings
+title: DMA Cert
+description: A Jekyll site for DMA Certification
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Theme settings (optional - you can use a theme or custom layouts)
+# theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gem/
+  - vendor/ruby/
+  - .git
+  - .github
+
