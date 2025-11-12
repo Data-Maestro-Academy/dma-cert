@@ -1,7 +1,7 @@
 ---
 layout: certificate
 title: Certificate of Completion
-certificate_image: UC-cfcdfb86-a50e-46f8-a8a7-65155429cc84.jpg
+certificate_image: DMA-2025-UAE00001.png
 ---
 
 <div class="certificate-container">
