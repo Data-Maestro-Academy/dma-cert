@@ -1,6 +1,7 @@
 ---
 layout: certificate
 title: Certificate of Completion
+logo_img: data-maestro-logo.png
 certificate_image: DMA-2025-UAE00001.png
 ---
 
@@ -8,7 +9,7 @@ certificate_image: DMA-2025-UAE00001.png
   <div class="certificate-paper">
     <div class="certificate-header">
       <div class="certificate-logo">
-        <span class="logo-text">DMA</span>
+        <img src="{{ site.baseurl }}/assets/certs/{{ page.logo_img  }}" alt="logo">
       </div>
       <div class="certificate-info">
         <div class="info-row">
