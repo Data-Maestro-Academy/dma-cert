@@ -2,7 +2,7 @@
 layout: certificate
 title: Certificate of Completion
 logo_img: data-maestro-logo.png
-certificate_image: DMA-2025-UAE00001.png
+certificate_image: DMA-2025-UAE00000.png
 ---
 
 <div class="certificate-container">
