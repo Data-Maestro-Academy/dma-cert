@@ -24,7 +24,7 @@ certificate_image: UC-cfcdfb86-a50e-46f8-a8a7-65155429cc84.jpg
     </div>
     
     <div class="certificate-image-container">
-      <img src="{{ site.baseurl }}/assets/certs/{{ page.certificate_image | default: 'UC-cfcdfb86-a50e-46f8-a8a7-65155429cc84.jpg' }}" alt="Certificate of Completion" class="certificate-image">
+      <img src="{{ site.baseurl }}/assets/certs/{{ page.certificate_image | default: 'DMA-2025-UAE00001.png' }}" alt="Certificate of Completion" class="certificate-image">
     </div>
     
     <div class="certificate-footer">
