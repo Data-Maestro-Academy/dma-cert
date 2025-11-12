@@ -56,7 +56,7 @@ title: Certificate of Completion
   <div class="certificate-right">
     <div class="recipient-info">
       <div class="recipient-avatar">
-        <img src="/dma-certs/assets/profile-placeholder.png" alt="Zaher Abou Shakra" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <img src="{{ site.baseurl }}/assets/profile-placeholder.png" alt="Zaher Abou Shakra" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
         <div class="avatar-placeholder" style="display:none;">
           <span>ZA</span>
         </div>
