@@ -1,8 +1,8 @@
 # Site settings
 title: DMA Cert
 description: A Jekyll site for DMA Certification
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "/dma-certs" # the subpath of your site, e.g. /blog
+url: "https://certs.datamaestro.academy" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
