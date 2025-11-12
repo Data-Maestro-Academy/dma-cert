@@ -12,10 +12,10 @@ certificate_image: DMA-2025-UAE00001.png
       </div>
       <div class="certificate-info">
         <div class="info-row">
-          <span>Certificate no: <strong>UC-cfcdfb86-a50e-46f8-a8a7-65155429cc84</strong></span>
+          <span>Certificate no: <strong>DMA-2025-UAE00001</strong></span>
         </div>
         <div class="info-row">
-          <span>Certificate url: <strong>certs.datamaestro.academy/dma-certs/UC-cfcdfb86-a50e-46f8-a8a7-65155429cc84</strong></span>
+          <span>Certificate url: <strong>certs.datamaestro.academy/dma-certs/DMA-2025-UAE00001</strong></span>
         </div>
         <div class="info-row">
           <span>Reference Number: <strong>0004</strong></span>
