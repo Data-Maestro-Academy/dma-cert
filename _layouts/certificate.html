@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/certificate.css?v=2">
   </head>
   <body>
+     <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}/assets/images/logo.png" alt="{{ site.title }}" />
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a href="{{ site.baseurl }}/courses">Courses</a></li>
+            <li><a href="{{ site.baseurl }}/pricing">Pricing</a></li>
+            <li><a href="{{ site.baseurl }}/leaderboard">Leaderboard</a></li>
+            <li><a href="{{ site.baseurl }}/about">About</a></li>
+            <li><a href="{{ site.baseurl }}/news">News</a></li>
+            <li><a href="{{ site.baseurl }}/approach">Approach</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="certificate-page">
       {{ content }}
     </div>
