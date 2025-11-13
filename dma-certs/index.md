@@ -9,7 +9,7 @@ certificate_image: DMA-2025-UAE00000.png
   <div class="certificate-paper">
     <div class="certificate-header">
       <div class="certificate-logo">
-        <img src="{{ site.baseurl }}/assets/certs/{{ page.logo_img  }}" alt="logo">
+        <img src="{{ site.baseurl }}/assets/img/{{ page.logo_img  }}" alt="logo">
       </div>
       <div class="certificate-info">
         <div class="info-row">
