@@ -126,11 +126,11 @@
 
 @media (max-width: 600px) {
   .certificate-page {
-    padding: 15px;
+    padding: 15px 10px;
   }
   
   .certificate-paper {
-    padding: 25px 20px;
+    padding: 25px 15px;
   }
   
   .certificate-header {
@@ -138,9 +138,14 @@
     gap: 15px;
   }
   
+  .certificate-logo {
+    font-size: 28px;
+  }
+  
   .certificate-info {
     text-align: left;
     max-width: 100%;
+    font-size: 9px;
   }
   
   .certificate-image-container {
@@ -148,7 +153,31 @@
   }
   
   .certificate-footer {
-    font-size: 9px;
+    font-size: 8px;
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate-page {
+    padding: 10px 5px;
+  }
+  
+  .certificate-paper {
+    padding: 20px 12px;
+  }
+  
+  .certificate-logo {
+    font-size: 24px;
+  }
+  
+  .certificate-info {
+    font-size: 8px;
+  }
+  
+  .certificate-footer {
+    font-size: 7px;
   }
 }
 

@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | default: site.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/header.css?v=2">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/header.css?v=3">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css?v=1">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/certificate.css?v=2">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/certificate.css?v=3">
   </head>
   <body>
     <header class="site-header">
@@ -17,6 +17,12 @@
             <img src="{{ site.baseurl }}/assets/img/data-maestro-logo-no-bg.png" alt="{{ site.title }}" />
           </a>
         </div>
+        <button class="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="menu-overlay"></div>
         <nav class="main-nav">
           <ul>
             <li><a href="https://www.datamaestro.academy/">Home</a></li>
@@ -37,5 +43,57 @@
   <!-- Image hover -->
  <!-- <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6915ade8fd0d53dc5020dcf3&product=sop' async='async'></script> -->
   <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6915ade8fd0d53dc5020dcf3&product=image-share-buttons' async='async'></script>
+  <script>
+    // Hamburger menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger-menu');
+      const nav = document.querySelector('.main-nav');
+      const overlay = document.querySelector('.menu-overlay');
+      
+      function toggleMenu(isOpen) {
+        if (hamburger && nav && overlay) {
+          hamburger.setAttribute('aria-expanded', isOpen);
+          if (isOpen) {
+            hamburger.classList.add('active');
+            nav.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          } else {
+            hamburger.classList.remove('active');
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        }
+      }
+      
+      if (hamburger && nav && overlay) {
+        hamburger.addEventListener('click', function() {
+          const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+          toggleMenu(!isExpanded);
+        });
+        
+        // Close menu when clicking overlay
+        overlay.addEventListener('click', function() {
+          toggleMenu(false);
+        });
+        
+        // Close menu when clicking on a link
+        const navLinks = nav.querySelectorAll('a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            toggleMenu(false);
+          });
+        });
+        
+        // Close menu on escape key
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape' && nav.classList.contains('active')) {
+            toggleMenu(false);
+          }
+        });
+      }
+    });
+  </script>
 </html>
 
